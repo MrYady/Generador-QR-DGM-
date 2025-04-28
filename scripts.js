@@ -1,41 +1,3 @@
-/*
-const contenedorQR = document.getElementById('conetenedorQR');
-const formulario = document.getElementById('formulario');
-const returnText = document.getElementById('returnText');
-const btnQR = document.getElementById('btnQR');
-
-
-const tiempoTranscurrido = Date();
-const fecha = new Date( );
-fecha.toUTCString('dd/mm/yy'); 
-const QR = new QRCode(contenedorQR);
-
-
-
-
-btnQR.addEventListener('click', (e) =>{
-    e.preventDefault();
-    QR.makeCode(formulario.txtQR.value);
-    returnText.innerText = formulario.txtQR.value
-    formulario.txtQR.value = "";
-    formulario.txtQR.placeholder = "Ingrese otro texto o URL"
-});
-
-
-
-function limpiar(){
-    QR.clear();
-    returnText.innerText = "";
-    formulario.txtQR.value = fecha;
-    formulario.txtQR.placeholder = "Ingrese un texto o URL";
-}
-
-function descargarQR(){
-    QR.download = fecha;
-}
-
-*/
-
 //------ Selección de Elementos -------//
 const textInput = document.getElementById("txtQR");
 const botonGenerar = document.getElementById("btnQR");
@@ -101,3 +63,39 @@ function limpiar(){
     textInput.placeholder = "Ingrese un texto o URL";
 }
 
+
+/*
+const contenedorQR = document.getElementById('conetenedorQR');
+const formulario = document.getElementById('formulario');
+const returnText = document.getElementById('returnText');
+const btnQR = document.getElementById('btnQR');
+
+
+const tiempoTranscurrido = Date();
+const fecha = new Date( );
+fecha.toUTCString('dd/mm/yy'); 
+const QR = new QRCode(contenedorQR);
+
+
+btnQR.addEventListener('click', (e) =>{
+    e.preventDefault();
+    QR.makeCode(formulario.txtQR.value);
+    returnText.innerText = formulario.txtQR.value
+    formulario.txtQR.value = "";
+    formulario.txtQR.placeholder = "Ingrese otro texto o URL"
+});
+
+
+
+function limpiar(){
+    QR.clear();
+    returnText.innerText = "";
+    formulario.txtQR.value = fecha;
+    formulario.txtQR.placeholder = "Ingrese un texto o URL";
+}
+
+function descargarQR(){
+    QR.download = fecha;
+}
+
+*/

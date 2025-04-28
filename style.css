@@ -9,7 +9,7 @@ body{
 
 a{
     text-decoration: none;
-    color: #181D69;
+    color: #c5adf7;
 }
 
 header{
@@ -22,8 +22,7 @@ header{
 
 .identidad{
     color: #fff;
-    width: 100%;
-    padding: 10px 0 10px 0;
+    padding: 10px 10px;
     background: linear-gradient( 50deg, #001426, #181D69, #222261);
     display: flex;
     gap: 15px;
@@ -35,6 +34,8 @@ header{
 .titulo{
     text-align: center;
     font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+
 }
 
 
@@ -43,7 +44,7 @@ header{
 }
 
 .logo{
-    width: 140px;
+    width: 10%;
 }
 
 .logo .imglogo{
@@ -103,6 +104,15 @@ header{
     margin-left: 5px;
 }
 
+.btnQR:hover{
+    background-color: #404083;
+    scale: 98%;
+}
+
+.btnQR:active{
+    scale: 90%;
+}
+
 .showreturn{
     width: 65%;
     min-height: 30%;
@@ -112,7 +122,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    margin: 20px auto;
     padding: 10px;
 }
 
@@ -123,7 +133,7 @@ header{
     height: 20%;
     padding: 5px;
     margin-bottom: 10px;
-    background-color:rgb(236, 234, 233);
+    background-color:rgb(215, 215, 215);
     display: flex;
 }
 
@@ -142,11 +152,21 @@ header{
     text-align: center;
 }
 
+
+.btnReturn:hover{
+    background-color: #cbcbd2;
+    scale: 98%;
+}
+
+.btnReturn:active{
+    scale: 90%;
+}
+
 footer{
     position: relative;
     width: 100%;
-    height: 17vh;
-    background-color: #ffffff;
+    height: 20vh;
+    background-image: linear-gradient(90deg,#181D69, #3c43ac 60%, #181D69 ) ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,33 +176,65 @@ footer{
 
 .introCreador{
     display: flex;
+    gap: 20px;
     justify-content: center;
 }
 
 
-.logoCreador{width: 5%;}
-.logoCreadorIMG{width: 100%;}
+.logoCreador{width: 7%;}
+
+.logoCreadorIMG{
+    width: 100%; 
+    background-color: #ffffff;
+    padding: 7px 3px;
+    border-radius: 10px;
+}
 
 .descripcionCreador{
     text-align: center;
 }
 
 .descripcionCreador h2{
+    font-size: 2rem;
     font-family: "Roboto Slab", serif;
 }
 
 .descripcionCreador p{
     font-family: "Raleway", sans-serif;
     font-size: 13px;
-    font-weight: 100;
+    font-weight: 200;
 }
 
 .copyright{
     font-family: "Noto Sans", sans-serif;
     font-weight: 200;
-    font-size: 14px;
+    font-size: 12px;
     position: absolute;
     bottom: 5px;
     display: flex;
+    align-items: center;
     gap: 2px;
+}
+
+@media (width <= 900px) {
+
+
+    .logo{
+        width: 15%;
+    }
+
+    .titulo{
+        font-size: 0.5rem;
+    }
+    
+
+
+    .generador{
+        flex-direction: column;
+    }
+
+
+    .showreturn{
+        width: auto;
+    }
 }
