@@ -43,6 +43,8 @@ function descargarCodigoQr() {
         link.href = qrImageData;
         link.download = "codigo_qr.png";
         link.click();
+    }else{
+        mostrarAviso("No se ha generado ningún QR")
     }
 }
 
